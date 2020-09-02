@@ -16,12 +16,17 @@
 */
 
 html{
-	background-color:#f7f7f7;
+	/*background-color:#f7f7f7;*/
 }
 
 body{
+	height:100%;
+	width:100%;
+	/*background-color:#12271d;*/
+	background: linear-gradient(-45deg, #afafaf, #ffffff, #efeeff, #e7f9ff);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
 	overflow:none;
-	
 	
 }
 
@@ -209,6 +214,18 @@ a:hover, a:active {
 #space{
 	padding-bottom:50px;
 	padding-top:30px;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 
