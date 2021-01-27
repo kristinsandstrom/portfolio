@@ -1,0 +1,331 @@
+@font-face{
+	font-family:"Ortica";
+	src: url("font/Ortica-Light.otf") format("opentype");
+}
+
+@font-face{
+	font-family:"founders";
+	src: url("font/FoundersGroteskCondensed-Light.otf") format("opentype");
+}
+html{
+	transition: 1s;
+}
+
+body{
+	
+	background-color:#f3f3f3;
+	/*background-color:black;*/
+	color:black;
+	overscroll-behavior: none; /* default */
+	overscroll-behavior-x: none;
+	overscroll-behavior-y: none;
+	height:absolute; 
+    animation-duration: 2s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+    animation-name: fadeInRight;
+
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+/*COMPUTER*/
+@media screen and (min-width: 900px){
+.parent{
+	width:200%;
+	height:100%;
+	/*
+	transition: width 2s, height 4s;
+	transition-timing-function: ease-in-out;
+	*/
+}
+
+/* THESE ARE THE TRANSITION VALUES
+.parent:hover{
+	width:500%;
+}
+*/
+
+/*
+.parent-2:hover{
+	width:400%;
+}
+*/
+
+
+.parent-2{
+	width:200%;
+	height:100%;
+	transition: width 2s, height 4s;
+	transition-timing-function: ease-in-out;
+	margin-right:2em;
+}
+
+
+
+}
+
+/* PHONE */
+@media screen and (max-width: 900px) {
+	.parent-2{
+		margin-bottom:2em;
+	}
+	
+}
+
+/*COMPUTER*/
+@media screen and (min-width: 900px){
+.content{
+		display:flex;
+		 
+	    
+}
+}
+
+/*COMPUTER*/
+@media screen and (min-width: 600px) { 
+h2{
+	font-family:"Ortica", helvetica;
+	font-size:6vh;
+	line-height:42px;
+	font-weight:normal;
+	margin-bottom:0.5em;
+	margin-top:0%;
+	letter-spacing:1px;
+    animation-duration: 2.5s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+	animation-name: fadeInRight;
+	
+}
+}
+
+/* PHONE */
+@media screen and (max-width: 600px) {
+h2{
+	font-family:"Ortica", helvetica;
+	font-size:4vh;
+	line-height:4vh;
+	font-weight:normal;
+	margin-bottom:0.5em;
+	margin-top:0%;
+	letter-spacing:1px;
+    animation-duration: 1s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+	animation-name: fadeInRight;
+}
+}
+
+/*COMPUTER*/
+@media screen and (min-width: 600px) { 
+h1{
+	font-family:"Ortica", helvetica;
+	font-size:4vh;
+	line-height:5vh;
+
+	font-weight:normal;
+	
+	/*text-indent:33px;*/
+	margin-bottom:0%;
+	margin-top:0%;
+	flex-direction:row;
+}
+}
+
+/* PHONE */
+@media screen and (max-width: 600px) { 
+h1{
+	font-family:"Ortica", helvetica;
+	font-size:2.5vh;
+	line-height:3.5vh;
+	font-weight:normal;
+	
+	/*text-indent:33px;*/
+	margin-bottom:0.5em;
+	margin-top:0%;
+}
+}
+
+/*COMPUTER*/
+@media screen and (min-width: 600px) { 
+p{
+	font-family:"Ortica", helvetica;
+	font-weight:normal;
+	font-size:4vh;
+	display:flex;
+	justify-content:center;
+	padding-top:0.5%;
+	padding-bottom:0.5%;
+	margin:none;	
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  transition-timing-function: ease-in;
+  animation-fill-mode: both;	
+ }
+}
+/* PHONE */
+@media screen and (max-width: 900px) { 
+	p{
+		font-family:"Ortica", helvetica;
+		font-weight:normal;
+		font-size:3vh;
+		display:flex;
+		justify-content:center;
+		padding-top:1%;
+		padding-bottom:1%;
+		margin:none;		
+	 }
+}
+
+/*COMPUTER*/
+@media screen and (min-width: 600px) { 
+.image{
+	
+	
+	width:100%;
+
+	margin-left:0%;
+	margin-right:0%;
+	margin-bottom:10px;	
+	/*
+	width:80%;
+	margin-left:10%;
+	margin-right:10%;
+	margin-bottom:10px;	
+	*/
+}
+}
+
+/* PHONE */
+@media screen and (max-width: 600px) { 
+.image{
+	
+	width:100%;
+	/*width:95%;*/
+	margin-left:0%;
+	margin-right:0%;
+	margin-bottom:2.5px;	
+}
+}
+
+
+/*COMPUTER*/
+@media screen and (min-width: 600px) { 
+video{
+	width:100%;
+	margin-left:0%;
+	margin-right:0%;	
+
+     height: auto;
+     margin-bottom: 10px;
+     margin-top: 0px;
+	 border:none;
+	 position:center;
+	 display:flex;
+ 	flex-wrap:wrap;
+ 	align-content:center;
+ 	flex-direction:column;
+}	
+}
+
+
+/* PHONE */
+@media screen and (max-width: 600px) { 
+video{
+	width:100%;
+	margin-left:0%;
+	margin-right:0%;	
+
+     height: auto;
+     margin-bottom: 5px;
+     margin-top: 2px;
+	 border:none;
+	 position:center;
+	 display:flex;
+ 	flex-wrap:wrap;
+ 	align-content:center;
+ 	flex-direction:column;
+}
+}
+
+
+.videowrapper{
+	
+	display:flex;
+	flex-wrap:wrap;
+	align-content:center;
+	flex-direction:column;
+}
+
+/*
+footer{
+	position: -webkit-sticky;
+	position: sticky;
+	  bottom: 0;
+	  background-color: #f3f3f3;
+	  padding: 0em;
+	  display:block;
+	  width:100%;   
+}
+*/
+
+header{
+	position: -webkit-sticky;
+	position: sticky;
+	  top: 0;
+	  background-color: #f3f3f3;
+	  padding: 0em;
+	  display:block;
+	  width:100%;  
+	 
+	  
+
+	 
+}
+
+
+a:link, a:visited {
+	color:black;
+	background-color:transparent;
+	text-decoration:none;
+}
+
+a:hover, a:active {
+	color:	#ffe100;
+	/*color:	#F0E68C;*/
+	background-color:transparent;
+	text-de
+}
+
+/* Animation transition fade in right */
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+	
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Animation transition fade in up */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0.5;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
