@@ -17,6 +17,7 @@ body{
 	overscroll-behavior: none; /* default */
 	overscroll-behavior-x: none;
 	overscroll-behavior-y: none;
+	margin:0;
     
 }
 
